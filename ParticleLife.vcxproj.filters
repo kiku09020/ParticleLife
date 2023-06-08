@@ -13,8 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\Manager">
+      <UniqueIdentifier>{320e2ee3-b594-4385-85f0-05486040f580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Manager\Input">
+      <UniqueIdentifier>{0a315ad0-987c-474e-adce-cb86f63249d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Manager">
+      <UniqueIdentifier>{9f698adf-e28d-4440-af30-9ddc9067c675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Manager\Input">
+      <UniqueIdentifier>{676ca805-5604-40be-84d6-f95748e55d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Extension">
+      <UniqueIdentifier>{be127ac7-d789-4218-b714-39d96482e3b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KeyBoard.cpp">
+      <Filter>ソース ファイル\Manager\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>ソース ファイル\Manager\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameManager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>ヘッダー ファイル\Manager\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>ヘッダー ファイル\Extension</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

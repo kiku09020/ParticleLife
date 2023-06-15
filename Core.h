@@ -1,6 +1,8 @@
 #pragma once
 #include "DxLib.h"
 
+#include "SceneController.h"
+
 class Core
 {
 private:
@@ -40,5 +42,5 @@ public:
 	/// <summary>
 	/// I—¹‚Ìˆ—
 	/// </summary>
-	void OnEnd();
+	static void OnEnd();
 };

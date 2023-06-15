@@ -43,6 +43,15 @@
     <Filter Include="ソース ファイル\Manager\State\GameState">
       <UniqueIdentifier>{3ed9dc0a-bd94-423d-b7bf-b758827f99e7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\GameObjects">
+      <UniqueIdentifier>{492b26bf-c574-48e8-b316-2f3b06a919a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameObjects">
+      <UniqueIdentifier>{c46b49a9-a433-4f94-887a-1a111607afd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Extensions">
+      <UniqueIdentifier>{6a8841d5-6783-425e-a7b9-5c128d2b3825}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -57,6 +66,21 @@
     <ClCompile Include="Core.cpp">
       <Filter>ソース ファイル\Manager</Filter>
     </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>ソース ファイル\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleManager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScenes.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSceneController.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core.h">
@@ -67,6 +91,21 @@
     </ClInclude>
     <ClInclude Include="Color.h">
       <Filter>ヘッダー ファイル\Extension</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>ヘッダー ファイル\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleManager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneController.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScenes.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

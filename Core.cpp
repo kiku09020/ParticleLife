@@ -29,11 +29,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 void Core::OnInit()
 {
-	DxLib_Init();								// DxLib初期化
-	SetOutApplicationLogValidFlag(false);		// ログ出力しない
-
 	WindowInit();
 	DrawingInit();
+	SetOutApplicationLogValidFlag(false);		// ログ出力しない
+	DxLib_Init();								// DxLib初期化
+
+	SceneController::Init();					// シーンの初期化
 }
 
 void Core::WindowInit()
@@ -60,20 +61,10 @@ void Core::OnUpdate()
 {
 	ClearDrawScreen();
 
-	VECTOR mousePos = Mouse::GetMousePosition();
-
-	if (Keyboard::GetKeyDown(KEY_INPUT_ESCAPE)) {
-		OnEnd();
-	}
-
-	if (Mouse::GetMouseButton(MOUSE_INPUT_LEFT)) {
-		DrawCircleAA(mousePos.x, mousePos.y, 10, 32, Color::White());
-	}
-
-	DrawCircleAA(mousePos.x, mousePos.y, 5,32, Color::White());
+	SceneController::Update();					// シーンの更新処理
 
 	ScreenFlip();
-	WaitTimer(WAIT_MS);		// 待機
+	WaitTimer(WAIT_MS);
 }
 
 //--------------------------------------------------

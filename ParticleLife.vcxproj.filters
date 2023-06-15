@@ -28,6 +28,21 @@
     <Filter Include="ヘッダー ファイル\Extension">
       <UniqueIdentifier>{be127ac7-d789-4218-b714-39d96482e3b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Manager\State">
+      <UniqueIdentifier>{a63cd449-9706-4bb5-8f04-c9adc0fa2c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Manager\State\Base">
+      <UniqueIdentifier>{07dcbc8a-8ef1-4a38-8677-f8bf399623db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Manager\State\GameState">
+      <UniqueIdentifier>{a280e855-3007-4f52-8719-bc73ce0170fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Manager\State">
+      <UniqueIdentifier>{3407a5cd-64b1-40d3-a7dc-1008911e9782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Manager\State\GameState">
+      <UniqueIdentifier>{3ed9dc0a-bd94-423d-b7bf-b758827f99e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -42,8 +57,8 @@
     <ClCompile Include="GameManager.cpp">
       <Filter>ソース ファイル\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="Input.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="GameStateManager.cpp">
+      <Filter>ソース ファイル\Manager\State\GameState</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +70,12 @@
     </ClInclude>
     <ClInclude Include="Color.h">
       <Filter>ヘッダー ファイル\Extension</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateManager.h">
+      <Filter>ヘッダー ファイル\Manager\State\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>ヘッダー ファイル\Manager\State\Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

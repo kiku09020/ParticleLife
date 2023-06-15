@@ -2,6 +2,8 @@
 #include "Input.h"
 #include "Color.h"
 
+using namespace Input;
+
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	GameManager manager;
@@ -32,13 +34,15 @@ void GameManager::OnInit()
 
 	WindowInit();
 	DrawingInit();
+
+	stateMachine.Init<MainGameState>();
 }
 
 void GameManager::WindowInit()
 {
-	SetMainWindowText(WINDOW_TITLE);				// ウィンドウタイトル指定
-	SetBackgroundColor(128, 128, 128);					// 背景色指定
+	SetMainWindowText(WINDOW_TITLE);			// ウィンドウタイトル指定
 
+	SetGraphMode((int)windowSize.x, (int)windowSize.y, colorBitDepth);
 	ChangeWindowMode(true);
 
 	// set icon
@@ -46,6 +50,7 @@ void GameManager::WindowInit()
 
 void GameManager::DrawingInit()
 {
+	SetBackgroundColor(128, 128, 128);			// 背景色指定
 	SetDrawScreen(DX_SCREEN_BACK);				// 裏画面描画
 }
 #pragma endregion
@@ -63,10 +68,12 @@ void GameManager::OnUpdate()
 	}
 
 	if (Mouse::GetMouseButton(MOUSE_INPUT_LEFT)) {
-		DrawCircle(mousePos.x, mousePos.y, 10, Color::White());
+		DrawCircleAA(mousePos.x, mousePos.y, 10, 32, Color::White());
 	}
 
-	DrawCircle(mousePos.x, mousePos.y, 5, Color::White());
+	stateMachine.Update();
+
+	DrawCircleAA(mousePos.x, mousePos.y, 5,32, Color::White());
 
 	ScreenFlip();
 	WaitTimer(WAIT_MS);		// 待機

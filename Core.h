@@ -1,8 +1,7 @@
 #pragma once
 #include "DxLib.h"
-#include "GameStateManager.h"
 
-class GameManager
+class Core
 {
 private:
 	const TCHAR* WINDOW_TITLE = "Title";			// ウィンドウタイトル
@@ -12,8 +11,6 @@ private:
 	const VECTOR windowSize = VGet(960.0f, 540.0f, 0.0f);
 
 	const int colorBitDepth = 32;
-
-	GameStateMachine stateMachine;
 
 	//--------------------------------------------------
 #pragma region  InitMethods

@@ -54,15 +54,12 @@
     <ClCompile Include="Mouse.cpp">
       <Filter>ソース ファイル\Manager\Input</Filter>
     </ClCompile>
-    <ClCompile Include="GameManager.cpp">
+    <ClCompile Include="Core.cpp">
       <Filter>ソース ファイル\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="GameStateManager.cpp">
-      <Filter>ソース ファイル\Manager\State\GameState</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameManager.h">
+    <ClInclude Include="Core.h">
       <Filter>ヘッダー ファイル\Manager</Filter>
     </ClInclude>
     <ClInclude Include="Input.h">
@@ -70,12 +67,6 @@
     </ClInclude>
     <ClInclude Include="Color.h">
       <Filter>ヘッダー ファイル\Extension</Filter>
-    </ClInclude>
-    <ClInclude Include="GameStateManager.h">
-      <Filter>ヘッダー ファイル\Manager\State\GameState</Filter>
-    </ClInclude>
-    <ClInclude Include="State.h">
-      <Filter>ヘッダー ファイル\Manager\State\Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

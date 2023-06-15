@@ -4,7 +4,14 @@
 // ó‘ÔƒNƒ‰ƒX
 class BaseState
 {
+protected:
+	StateMachine<BaseState> stateMachine;
+
 public:
+	BaseState() = delete;
+
+	BaseState(StateMachine<BaseState> stateMachine);
+
 	virtual void OnEnter() = 0;
 	virtual void OnUpdate() = 0;
 	virtual void OnExit() = 0;
@@ -12,7 +19,6 @@ public:
 
 //--------------------------------------------------
 
-// §–ñ
 template <typename T>
 concept State = std::is_base_of<BaseState, T>::value;
 
@@ -45,12 +51,17 @@ public:
 
 //--------------------------------------------------
 
+BaseState::BaseState(StateMachine<BaseState> stateMachine)
+{
+	this->stateMachine = stateMachine;
+}
+
 template <State T>
 template<State U>
 void StateMachine<T>::Init()
 {
 	// ‰Šúó‘Ô‚ğİ’è
-	startState = new U();
+	startState = new U(this);
 
 	currentState = startState;
 	currentState->OnEnter();
@@ -88,7 +99,7 @@ void StateMachine<T>::StateTransition()
 	currentState->OnExit();
 
 	delete currentState;
-	currentState = new U();
+	currentState = new U(this);
 
 	currentState->OnEnter();
 }

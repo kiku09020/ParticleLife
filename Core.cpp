@@ -1,4 +1,4 @@
-#include "GameManager.h"
+#include "Core.h"
 #include "Input.h"
 #include "Color.h"
 
@@ -6,20 +6,20 @@ using namespace Input;
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-	GameManager manager;
+	Core core;
 
 	// 初期化処理
-	manager.OnInit();
+	core.OnInit();
 
 	// 更新処理
 	while (ProcessMessage() == 0) {
 		Mouse::Update();
 		Keyboard::Update();
-		manager.OnUpdate();
+		core.OnUpdate();
 	}
 
 	// 終了処理
-	manager.OnEnd();
+	core.OnEnd();
 	return 0;
 }
 
@@ -27,28 +27,27 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 #pragma region Init
 
 
-void GameManager::OnInit()
+void Core::OnInit()
 {
 	DxLib_Init();								// DxLib初期化
 	SetOutApplicationLogValidFlag(false);		// ログ出力しない
 
 	WindowInit();
 	DrawingInit();
-
-	stateMachine.Init<MainGameState>();
 }
 
-void GameManager::WindowInit()
+void Core::WindowInit()
 {
 	SetMainWindowText(WINDOW_TITLE);			// ウィンドウタイトル指定
+	ChangeWindowMode(true);						// ウィンドウモードに指定
 
-	SetGraphMode((int)windowSize.x, (int)windowSize.y, colorBitDepth);
-	ChangeWindowMode(true);
+	SetGraphMode((int)windowSize.x, (int)windowSize.y, colorBitDepth);		// ウィンドウサイズ、カラービットの指定
 
-	// set icon
+	// ウィンドウアイコン指定
+
 }
 
-void GameManager::DrawingInit()
+void Core::DrawingInit()
 {
 	SetBackgroundColor(128, 128, 128);			// 背景色指定
 	SetDrawScreen(DX_SCREEN_BACK);				// 裏画面描画
@@ -57,7 +56,7 @@ void GameManager::DrawingInit()
 
 //--------------------------------------------------
 
-void GameManager::OnUpdate()
+void Core::OnUpdate()
 {
 	ClearDrawScreen();
 
@@ -71,8 +70,6 @@ void GameManager::OnUpdate()
 		DrawCircleAA(mousePos.x, mousePos.y, 10, 32, Color::White());
 	}
 
-	stateMachine.Update();
-
 	DrawCircleAA(mousePos.x, mousePos.y, 5,32, Color::White());
 
 	ScreenFlip();
@@ -81,7 +78,7 @@ void GameManager::OnUpdate()
 
 //--------------------------------------------------
 
-void GameManager::OnEnd()
+void Core::OnEnd()
 {
 	DxLib_End();								// DxLib終了処理
 }

@@ -2,6 +2,7 @@
 #include "State.h"
 
 /* Base */
+class GameStateMachine;
 
 // ゲーム状態の基底クラス
 class GameStateBase : public BaseState
@@ -21,6 +22,7 @@ class GameStateMachine : public StateMachine<GameStateBase>
 // メイン状態
 class MainGameState : public GameStateBase
 {
+public:
 	void OnEnter() override;
 	void OnUpdate() override;
 	void OnExit() override;
@@ -29,6 +31,7 @@ class MainGameState : public GameStateBase
 // ポーズ
 class PauseState : public GameStateBase
 {
+public:
 	void OnEnter() override;
 	void OnUpdate() override;
 	void OnExit() override;

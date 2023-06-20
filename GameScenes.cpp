@@ -4,11 +4,15 @@ using namespace Input;
 
 void MainScene::OnSceneLoaded()
 {
+	field = new Field(VGet(0, 0, 0));
 
+	field->Init();
 }
 
 void MainScene::OnSceneUpdate()
 {
+	field->Update();
+
 	DrawString(0, 0, "main", Color::Black());
 
 	VECTOR mousePos = Mouse::GetMousePosition();

@@ -1,31 +1,17 @@
 #pragma once
 #include "DxLib.h"
+#include "Window.h"
 
 #include "SceneController.h"
 
 class Core
 {
 private:
-	const TCHAR* WINDOW_TITLE = "Title";			// ウィンドウタイトル
+	Window* mainWindow;
 
-	const int WAIT_MS = 10;							// 待機ミリ秒
-
-	const VECTOR windowSize = VGet(960.0f, 540.0f, 0.0f);
-
-	const int colorBitDepth = 32;
+	const int WAIT_MS			= 10;							// 待機ミリ秒
 
 	//--------------------------------------------------
-#pragma region  InitMethods
-	/// <summary>
-	/// ウィンドウ関係の初期化
-	/// </summary>
-	void WindowInit();
-
-	/// <summary>
-	/// 描画関係の初期化
-	/// </summary>
-	void DrawingInit();
-#pragma endregion
 
 public:
 
@@ -42,5 +28,5 @@ public:
 	/// <summary>
 	/// 終了時の処理
 	/// </summary>
-	static void OnEnd();
+	void OnEnd();
 };

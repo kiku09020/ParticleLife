@@ -22,9 +22,6 @@
     <Filter Include="ヘッダー ファイル\Manager">
       <UniqueIdentifier>{9f698adf-e28d-4440-af30-9ddc9067c675}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Manager\Input">
-      <UniqueIdentifier>{676ca805-5604-40be-84d6-f95748e55d09}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ヘッダー ファイル\Extension">
       <UniqueIdentifier>{be127ac7-d789-4218-b714-39d96482e3b1}</UniqueIdentifier>
     </Filter>
@@ -52,6 +49,21 @@
     <Filter Include="ソース ファイル\Extensions">
       <UniqueIdentifier>{6a8841d5-6783-425e-a7b9-5c128d2b3825}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Manager\Scene">
+      <UniqueIdentifier>{3ca2b4b2-c3df-433d-b8d3-db519957036b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Manager\Scene">
+      <UniqueIdentifier>{cc99e186-30f7-4932-a75c-093d8d96f8db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Manager\Base">
+      <UniqueIdentifier>{db796a2e-24a0-44fc-ad86-f24ae5cbe2b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Manager\Input">
+      <UniqueIdentifier>{676ca805-5604-40be-84d6-f95748e55d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Manager\Base">
+      <UniqueIdentifier>{d99aa83b-a249-4674-a68d-83120cdbc2ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -63,29 +75,32 @@
     <ClCompile Include="Mouse.cpp">
       <Filter>ソース ファイル\Manager\Input</Filter>
     </ClCompile>
-    <ClCompile Include="Core.cpp">
-      <Filter>ソース ファイル\Manager</Filter>
-    </ClCompile>
     <ClCompile Include="Particle.cpp">
       <Filter>ソース ファイル\GameObjects</Filter>
     </ClCompile>
     <ClCompile Include="ParticleManager.cpp">
       <Filter>ソース ファイル\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="Field.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="GameSceneController.cpp">
+      <Filter>ソース ファイル\Manager\Scene</Filter>
     </ClCompile>
     <ClCompile Include="GameScenes.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Manager\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="GameSceneController.cpp">
+    <ClCompile Include="Field.cpp">
+      <Filter>ソース ファイル\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>ソース ファイル\Manager\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>ソース ファイル\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core.h">
-      <Filter>ヘッダー ファイル\Manager</Filter>
-    </ClInclude>
     <ClInclude Include="Input.h">
       <Filter>ヘッダー ファイル\Manager\Input</Filter>
     </ClInclude>
@@ -99,12 +114,21 @@
       <Filter>ヘッダー ファイル\Manager</Filter>
     </ClInclude>
     <ClInclude Include="Field.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneController.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\GameObjects</Filter>
     </ClInclude>
     <ClInclude Include="GameScenes.h">
+      <Filter>ヘッダー ファイル\Manager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneController.h">
+      <Filter>ヘッダー ファイル\Manager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>ヘッダー ファイル\Manager\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>ヘッダー ファイル\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

@@ -4,10 +4,12 @@
 #include "Input.h"
 #include "Color.h"
 
+#include "Field.h"
+
 class MainScene : public GameSceneBase
 {
 private:
-
+	Field* field;
 
 public:
 	void OnSceneLoaded() override;

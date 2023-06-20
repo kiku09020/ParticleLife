@@ -142,6 +142,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -151,14 +152,17 @@
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Particle.cpp" />
     <ClCompile Include="ParticleManager.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Core.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameScenes.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="SceneController.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Particle.h" />

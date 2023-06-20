@@ -21,19 +21,39 @@ private:
 		withoutCloseAndMinimize,			// 閉じるなし、最小化なし
 	};
 
-	const TCHAR* WINDOW_TITLE			= "Title";							// タイトル
-	const WindowStyleMode WINDOW_STYLE	= withMaximize;							// ウィンドウスタイル
+	// フルスクリーン時の解像度のモード
+	enum FullScrnResolMode
+	{
+		native	= DX_FSRESOLUTIONMODE_NATIVE,
+		desktop = DX_FSRESOLUTIONMODE_DESKTOP,
+		maximum = DX_FSRESOLUTIONMODE_MAXIMUM,
+	};
 
-	const bool ENABLE_CHANGEWINDOWSIZE	= true;								// ウィンドウサイズが変更可能か
-	const bool IS_WINDOWMODE			= true;								// ウィンドウモードかどうか
+	// フルスクリーン時の画面拡大モード
+	enum FullScrnScalingMode
+	{
+		bilinear = DX_FSSCALINGMODE_BILINEAR,
+		nearest  = DX_FSSCALINGMODE_NEAREST,
+	};
 
-	const Color bgColor	= Color::GrayWithRGB();								// 背景色
-	const int COLORBIT_DEPTH			= 8;								// カラービット
+	const TCHAR* WINDOW_TITLE				= "Title";			// タイトル
+	const WindowStyleMode WINDOW_STYLE		= withMaximize;		// ウィンドウスタイル
+	const FullScrnResolMode RESOLUTION_MODE = native;			// フルスクリーン解像度モード(違いわからん)
+	const FullScrnScalingMode SCALING_MODE	= nearest;			// 画面拡大モード
 
-	VECTOR windowSize					= VGet(960.0f, 540.0f, 0.0f);		// サイズ
+	const bool ENABLE_CHANGEWINDOWSIZE		= true;				// ウィンドウサイズが変更可能か
+	const bool IS_WINDOWMODE				= true;				// ウィンドウモードかどうか
+
+	const Color bgColor		= Color::GrayWithRGB();				// 背景色
+	const int COLORBIT_DEPTH				= 8;				// カラービット
+
+	VECTOR windowSize		= VGet(960.0f, 540.0f, 0.0f);		// サイズ
 public:
 	Window();
 
 	// ウィンドウサイズの指定
 	void SetWindowSize(VECTOR windowSize);
+
+	// Getter
+	VECTOR GetWindowSize() { return windowSize; }
 };

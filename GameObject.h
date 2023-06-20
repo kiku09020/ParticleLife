@@ -5,9 +5,12 @@
 class Transform
 {
 public:
-	VECTOR position;
-	VECTOR rotation;
-	VECTOR scale = VGet(1, 1, 1);
+	// コンストラクタ
+	Transform(VECTOR pos, VECTOR rot, VECTOR scl) :position(pos), rotation(rot), scale(scl) {}
+
+	VECTOR position = VGet(0, 0, 0);
+	VECTOR rotation = VGet(0, 0, 0);
+	VECTOR scale	= VGet(1, 1, 1);
 };
 
 class GameObject
@@ -15,14 +18,11 @@ class GameObject
 private:
 	bool activate = true;
 
-protected:
-	// 描画処理
-	virtual void Draw() = 0;
-
 public:
 	Transform transform;
 
-	GameObject(VECTOR);
+	// コンストラクタ
+	GameObject(Transform tf) :transform(tf) {}
 
 	//--------------------------------------------------
 	// 初期化

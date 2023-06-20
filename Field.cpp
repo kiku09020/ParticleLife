@@ -1,8 +1,13 @@
 #include "Field.h"
 
-Field::Field(VECTOR position) :GameObject(position)
+Field::Field() :GameObject(transform)
 {
-	transform.position = position;
+	transform.position.x = 960 / 2;
+	transform.position.y = 540 / 2;
+
+	transform.scale = VGet(1, 1, 1);
+
+	renderer = new Renderer2D(this, "Templates/Dark UI/32.png");
 }
 
 void Field::Init()
@@ -12,17 +17,5 @@ void Field::Init()
 
 void Field::Update()
 {
-	Draw();
-}
-
-void Field::Draw()
-{
-	float x1 = transform.position.x - (width / 2);
-	float x2 = transform.position.x + (width / 2);
-
-	float y1 = transform.position.y - (height / 2);
-	float y2 = transform.position.y + (height / 2);
-	
-
-	DrawBoxAA(x1, y1, x2, y2, Color::White(), true);
+	renderer->Draw();
 }

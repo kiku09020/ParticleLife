@@ -4,7 +4,7 @@ using namespace Input;
 
 void MainScene::OnSceneLoaded()
 {
-	field = new Field(VGet(0, 0, 0));
+	field = new Field();
 
 	field->Init();
 }

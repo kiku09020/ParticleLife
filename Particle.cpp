@@ -3,10 +3,5 @@
 
 Particle::Particle()
 {
-	SetPosition();
-}
-
-void Particle::SetPosition()
-{
 	
 }

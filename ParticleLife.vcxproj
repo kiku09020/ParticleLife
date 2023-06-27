@@ -148,6 +148,7 @@
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameSceneController.cpp" />
     <ClCompile Include="GameScenes.cpp" />
+    <ClCompile Include="Graph.cpp" />
     <ClCompile Include="KeyBoard.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Particle.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Field.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameScenes.h" />
+    <ClInclude Include="Graph.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="SceneController.h" />
     <ClInclude Include="Input.h" />

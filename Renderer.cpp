@@ -1,6 +1,6 @@
 #include "Renderer.h"
 
-std::string Renderer::GetFilePath(const char* dirPath, const char* filePath)
+std::string Renderer_BasedData::GetFilePath(const char* dirPath, const char* filePath)
 {
 	// ƒpƒX•Û‘¶
 	handleDirectoryPath = dirPath;
@@ -21,8 +21,8 @@ void Renderer2D::Draw()
 	float cx = .5f;
 	float cy = .5f;
 
-	float magRateX = gameObject->transform.scale.x;
-	float magRateY = gameObject->transform.scale.y;
+	float magRateX = gameObject->transform.scale.x + camera->transform.position.z;
+	float magRateY = gameObject->transform.scale.y + camera->transform.position.z;
 
 	float angle = gameObject->transform.rotation.z;
 

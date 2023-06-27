@@ -1,18 +1,9 @@
 #pragma once
-#include"DxLib.h"
-#include "Color.h"
+#include "GameObject.h"
 
-class Particle
+class Particle 
 {
 private:
-	float size;				// 大きさ
-	VECTOR position;		// 位置
-	
-
-
-	// 位置をランダムで指定
-	void SetPosition();
-
 
 public:
 	// コンストラクタ

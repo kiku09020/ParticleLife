@@ -9,6 +9,14 @@ struct Color
 	int r;	int g;	int b;	int a;
 
 	// コンストラクタ
+
+	// デフォルトコンストラクタ：白色に指定する
+	Color()
+	{
+		r = 1;		g = 1;		b = 1;		a = 1;
+	}
+
+	// RGBA指定
 	Color(int r, int g, int b, int a = 1)
 	{	this->r = r;	this->g = g;	this->b = b;	this->a = a;	}
 

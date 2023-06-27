@@ -9,10 +9,11 @@ private:
 	const float width = 500;
 	const float height = 500;
 
-	Renderer2D* renderer;
+	//Renderer2D* renderer;
+	GraphRenderer* renderer;
 
 public:
-	Field();
+	Field(Camera*);
 
 	void Init() override;
 	void Update() override;

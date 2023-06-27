@@ -64,6 +64,18 @@
     <Filter Include="ソース ファイル\Manager\Base">
       <UniqueIdentifier>{d99aa83b-a249-4674-a68d-83120cdbc2ae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\GameObjects\Camera">
+      <UniqueIdentifier>{c1b69070-a272-4ebe-861a-40bcf49a40b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameObjects\Camera">
+      <UniqueIdentifier>{aa87ef98-782d-4a64-8647-eb29c24d2c8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Renderer">
+      <UniqueIdentifier>{c57916ad-c7d7-4ff1-a8ad-8a94a9905462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Renderer">
+      <UniqueIdentifier>{3df2a4a4-4450-441a-81b8-800e49c05e34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -96,13 +108,16 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>ソース ファイル\GameObjects</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Camera.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\GameObjects\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>ソース ファイル\Manager\Base</Filter>
     </ClCompile>
     <ClCompile Include="Renderer.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -134,13 +149,16 @@
     <ClInclude Include="GameObject.h">
       <Filter>ヘッダー ファイル\GameObjects</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Camera.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\GameObjects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>ヘッダー ファイル\Manager\Base</Filter>
     </ClInclude>
     <ClInclude Include="Renderer.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

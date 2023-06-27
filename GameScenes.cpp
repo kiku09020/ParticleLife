@@ -4,13 +4,17 @@ using namespace Input;
 
 void MainScene::OnSceneLoaded()
 {
-	field = new Field();
+	camera = new Camera();
 
+	field = new Field(camera);
+
+	camera->Init();
 	field->Init();
 }
 
 void MainScene::OnSceneUpdate()
 {
+	camera->Update();
 	field->Update();
 
 	DrawString(0, 0, "main", Color::Black());
@@ -30,5 +34,8 @@ void MainScene::OnSceneUpdate()
 
 void MainScene::OnSceneDestroied()
 {
+	delete camera;
+	delete field;
+
 	DxLib_End();
 }

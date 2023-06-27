@@ -9,6 +9,7 @@
 class MainScene : public GameSceneBase
 {
 private:
+	Camera* camera;
 	Field* field;
 
 public:

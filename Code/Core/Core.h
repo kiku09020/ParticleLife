@@ -7,26 +7,29 @@
 class Core
 {
 private:
-	Window* mainWindow;
+	static Window* mainWindow;
 
-	const int WAIT_MS			= 10;							// 待機ミリ秒
+	static const int WAIT_MS			= 10;							// 待機ミリ秒
 
 	//--------------------------------------------------
 
 public:
-
 	/// <summary>
 	/// 初期化時の処理
 	/// </summary>
-	void OnInit();
+	static void OnInit();
 
 	/// <summary>
 	/// 更新処理
 	/// </summary>
-	void OnUpdate();
+	static void OnUpdate();
 
 	/// <summary>
 	/// 終了時の処理
 	/// </summary>
-	void OnEnd();
+	static void OnEnd();
+
+	//--------------------------------------------------
+
+	static Window* GetMainWindow() { return mainWindow; }
 };

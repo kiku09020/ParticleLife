@@ -4,22 +4,23 @@
 
 using namespace Input;
 
+Window* Core::mainWindow;
+const int Core::WAIT_MS;
+
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-	Core core;
-
 	// ‰Šú‰»ˆ—
-	core.OnInit();
+	Core::OnInit();
 
 	// XVˆ—
 	while (ProcessMessage() == 0) {
 		Mouse::Update();
 		Keyboard::Update();
-		core.OnUpdate();
+		Core::OnUpdate();
 	}
 
 	// I—¹ˆ—
-	core.OnEnd();
+	Core::OnEnd();
 	return 0;
 }
 

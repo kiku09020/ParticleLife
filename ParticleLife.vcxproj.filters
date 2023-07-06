@@ -126,6 +126,9 @@
     <ClCompile Include="Code\Core\Window\Window.cpp">
       <Filter>ソース ファイル\Core\Window</Filter>
     </ClCompile>
+    <ClCompile Include="Code\Manager\UI\UIManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Manager\Input\Input.h">
@@ -178,6 +181,9 @@
     </ClInclude>
     <ClInclude Include="Code\Core\Window\Window.h">
       <Filter>ヘッダー ファイル\Core\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Manager\UI\UIManager.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -13,174 +13,171 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ソース ファイル\Manager">
-      <UniqueIdentifier>{320e2ee3-b594-4385-85f0-05486040f580}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Manager\Input">
-      <UniqueIdentifier>{0a315ad0-987c-474e-adce-cb86f63249d4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ヘッダー ファイル\Manager">
       <UniqueIdentifier>{9f698adf-e28d-4440-af30-9ddc9067c675}</UniqueIdentifier>
     </Filter>
     <Filter Include="ヘッダー ファイル\Extension">
       <UniqueIdentifier>{be127ac7-d789-4218-b714-39d96482e3b1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Manager\State">
-      <UniqueIdentifier>{a63cd449-9706-4bb5-8f04-c9adc0fa2c74}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Manager\State\Base">
-      <UniqueIdentifier>{07dcbc8a-8ef1-4a38-8677-f8bf399623db}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Manager\State\GameState">
-      <UniqueIdentifier>{a280e855-3007-4f52-8719-bc73ce0170fb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Manager\State">
-      <UniqueIdentifier>{3407a5cd-64b1-40d3-a7dc-1008911e9782}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Manager\State\GameState">
-      <UniqueIdentifier>{3ed9dc0a-bd94-423d-b7bf-b758827f99e7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\GameObjects">
-      <UniqueIdentifier>{492b26bf-c574-48e8-b316-2f3b06a919a8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ヘッダー ファイル\GameObjects">
       <UniqueIdentifier>{c46b49a9-a433-4f94-887a-1a111607afd8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Extensions">
-      <UniqueIdentifier>{6a8841d5-6783-425e-a7b9-5c128d2b3825}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Manager\Scene">
-      <UniqueIdentifier>{3ca2b4b2-c3df-433d-b8d3-db519957036b}</UniqueIdentifier>
     </Filter>
     <Filter Include="ヘッダー ファイル\Manager\Scene">
       <UniqueIdentifier>{cc99e186-30f7-4932-a75c-093d8d96f8db}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Manager\Base">
-      <UniqueIdentifier>{db796a2e-24a0-44fc-ad86-f24ae5cbe2b1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ヘッダー ファイル\Manager\Input">
       <UniqueIdentifier>{676ca805-5604-40be-84d6-f95748e55d09}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Manager\Base">
-      <UniqueIdentifier>{d99aa83b-a249-4674-a68d-83120cdbc2ae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\GameObjects\Camera">
-      <UniqueIdentifier>{c1b69070-a272-4ebe-861a-40bcf49a40b4}</UniqueIdentifier>
     </Filter>
     <Filter Include="ヘッダー ファイル\GameObjects\Camera">
       <UniqueIdentifier>{aa87ef98-782d-4a64-8647-eb29c24d2c8a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Renderer">
+    <Filter Include="ヘッダー ファイル\Rendering">
+      <UniqueIdentifier>{3df2a4a4-4450-441a-81b8-800e49c05e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Rendering\RenderedObjects">
+      <UniqueIdentifier>{0fca498d-5747-43f8-8d60-0c3cadc91ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Rendering\Renderer">
+      <UniqueIdentifier>{46ee9e58-c6ee-43a0-a3c3-d40191ac53ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Rendering">
       <UniqueIdentifier>{c57916ad-c7d7-4ff1-a8ad-8a94a9905462}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Renderer">
-      <UniqueIdentifier>{3df2a4a4-4450-441a-81b8-800e49c05e34}</UniqueIdentifier>
+    <Filter Include="ソース ファイル\Rendering\RenderedObjcts">
+      <UniqueIdentifier>{ed960ab7-3583-472f-bc01-37dff5fe7266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Rendering\Renderer">
+      <UniqueIdentifier>{ddab1413-f7bf-4e8b-b937-238ce58ead9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core">
+      <UniqueIdentifier>{22194997-9616-40d5-8feb-15b16e9db861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Manager">
+      <UniqueIdentifier>{320e2ee3-b594-4385-85f0-05486040f580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Manager\Input">
+      <UniqueIdentifier>{0a315ad0-987c-474e-adce-cb86f63249d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Manager\Scene">
+      <UniqueIdentifier>{3ca2b4b2-c3df-433d-b8d3-db519957036b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObjects">
+      <UniqueIdentifier>{492b26bf-c574-48e8-b316-2f3b06a919a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObjects\Camera">
+      <UniqueIdentifier>{c1b69070-a272-4ebe-861a-40bcf49a40b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Extensions">
+      <UniqueIdentifier>{6a8841d5-6783-425e-a7b9-5c128d2b3825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core">
+      <UniqueIdentifier>{3be3fbd6-a984-4436-9837-adc870fe59c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core\Window">
+      <UniqueIdentifier>{364ac1c5-b864-48f4-8148-5885d84572f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core\Window">
+      <UniqueIdentifier>{0ed5c41a-c8a5-475a-b4aa-bbcd5167c5b8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="KeyBoard.cpp">
+    <ClCompile Include="Code\Manager\Input\KeyBoard.cpp">
       <Filter>ソース ファイル\Manager\Input</Filter>
     </ClCompile>
-    <ClCompile Include="Mouse.cpp">
+    <ClCompile Include="Code\Manager\Input\Mouse.cpp">
       <Filter>ソース ファイル\Manager\Input</Filter>
     </ClCompile>
-    <ClCompile Include="Particle.cpp">
-      <Filter>ソース ファイル\GameObjects</Filter>
-    </ClCompile>
-    <ClCompile Include="ParticleManager.cpp">
-      <Filter>ソース ファイル\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="GameSceneController.cpp">
+    <ClCompile Include="Code\Manager\Scene\GameSceneController.cpp">
       <Filter>ソース ファイル\Manager\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="GameScenes.cpp">
+    <ClCompile Include="Code\Manager\Scene\GameScenes.cpp">
       <Filter>ソース ファイル\Manager\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Field.cpp">
+    <ClCompile Include="Code\GameObjects\MainScene\Field.cpp">
       <Filter>ソース ファイル\GameObjects</Filter>
     </ClCompile>
-    <ClCompile Include="Core.cpp">
-      <Filter>ソース ファイル\Manager\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="GameObject.cpp">
+    <ClCompile Include="Code\GameObjects\MainScene\Particle.cpp">
       <Filter>ソース ファイル\GameObjects</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
+    <ClCompile Include="Code\GameObjects\MainScene\ParticleManager.cpp">
+      <Filter>ソース ファイル\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\GameObjects\Camera\Camera.cpp">
       <Filter>ソース ファイル\GameObjects\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>ソース ファイル\Manager\Base</Filter>
+    <ClCompile Include="Code\Renderer\RenderedObjects\RenderedGraphic.cpp">
+      <Filter>ソース ファイル\Rendering\RenderedObjcts</Filter>
     </ClCompile>
-    <ClCompile Include="RenderedShape.cpp">
-      <Filter>ソース ファイル\Renderer</Filter>
+    <ClCompile Include="Code\Renderer\RenderedObjects\RenderedObject.cpp">
+      <Filter>ソース ファイル\Rendering\RenderedObjcts</Filter>
     </ClCompile>
-    <ClCompile Include="RenderedGraphic.cpp">
-      <Filter>ソース ファイル\Renderer</Filter>
+    <ClCompile Include="Code\Renderer\RenderedObjects\RenderedShape.cpp">
+      <Filter>ソース ファイル\Rendering\RenderedObjcts</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer2D.cpp">
-      <Filter>ソース ファイル\Renderer</Filter>
+    <ClCompile Include="Code\Renderer\Renderers\Renderer2D.cpp">
+      <Filter>ソース ファイル\Rendering\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="RenderedObject.cpp">
-      <Filter>ソース ファイル\Renderer</Filter>
+    <ClCompile Include="Code\Core\Core.cpp">
+      <Filter>ソース ファイル\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Window\Window.cpp">
+      <Filter>ソース ファイル\Core\Window</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Input.h">
+    <ClInclude Include="Code\Manager\Input\Input.h">
       <Filter>ヘッダー ファイル\Manager\Input</Filter>
     </ClInclude>
-    <ClInclude Include="Color.h">
+    <ClInclude Include="Code\Extensions\Color.h">
       <Filter>ヘッダー ファイル\Extension</Filter>
     </ClInclude>
-    <ClInclude Include="Particle.h">
-      <Filter>ヘッダー ファイル\GameObjects</Filter>
+    <ClInclude Include="Code\Extensions\Event.h">
+      <Filter>ヘッダー ファイル\Extension</Filter>
     </ClInclude>
-    <ClInclude Include="ParticleManager.h">
-      <Filter>ヘッダー ファイル\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="Field.h">
-      <Filter>ヘッダー ファイル\GameObjects</Filter>
-    </ClInclude>
-    <ClInclude Include="GameScenes.h">
+    <ClInclude Include="Code\Manager\Scene\GameScenes.h">
       <Filter>ヘッダー ファイル\Manager\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="SceneController.h">
+    <ClInclude Include="Code\Manager\Scene\SceneController.h">
       <Filter>ヘッダー ファイル\Manager\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Core.h">
-      <Filter>ヘッダー ファイル\Manager\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObject.h">
+    <ClInclude Include="Code\GameObjects\MainScene\Field.h">
       <Filter>ヘッダー ファイル\GameObjects</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
+    <ClInclude Include="Code\GameObjects\MainScene\Particle.h">
+      <Filter>ヘッダー ファイル\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\GameObjects\MainScene\ParticleManager.h">
+      <Filter>ヘッダー ファイル\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\GameObjects\Camera\Camera.h">
       <Filter>ヘッダー ファイル\GameObjects\Camera</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>ヘッダー ファイル\Manager\Base</Filter>
+    <ClInclude Include="Code\Renderer\RenderedObjects\RenderedGraphic.h">
+      <Filter>ヘッダー ファイル\Rendering\RenderedObjects</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>ヘッダー ファイル\Renderer</Filter>
+    <ClInclude Include="Code\Renderer\RenderedObjects\RenderedShape.h">
+      <Filter>ヘッダー ファイル\Rendering\RenderedObjects</Filter>
     </ClInclude>
-    <ClInclude Include="RenderedShape.h">
-      <Filter>ヘッダー ファイル\Renderer</Filter>
+    <ClInclude Include="Code\Renderer\RenderedObjects\RendereredObject.h">
+      <Filter>ヘッダー ファイル\Rendering\RenderedObjects</Filter>
     </ClInclude>
-    <ClInclude Include="RenderedGraphic.h">
-      <Filter>ヘッダー ファイル\Renderer</Filter>
+    <ClInclude Include="Code\Renderer\Renderers\Renderer.h">
+      <Filter>ヘッダー ファイル\Rendering\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer2D.h">
-      <Filter>ヘッダー ファイル\Renderer</Filter>
+    <ClInclude Include="Code\Renderer\Renderers\Renderer2D.h">
+      <Filter>ヘッダー ファイル\Rendering\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer3D.h">
-      <Filter>ヘッダー ファイル\Renderer</Filter>
+    <ClInclude Include="Code\Renderer\Renderers\Renderer3D.h">
+      <Filter>ヘッダー ファイル\Rendering\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="RendereredObject.h">
-      <Filter>ヘッダー ファイル\Renderer</Filter>
+    <ClInclude Include="Code\Core\Core.h">
+      <Filter>ヘッダー ファイル\Core</Filter>
     </ClInclude>
-    <ClInclude Include="Event.h">
-      <Filter>ヘッダー ファイル\Extension</Filter>
+    <ClInclude Include="Code\Core\Window\Window.h">
+      <Filter>ヘッダー ファイル\Core\Window</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

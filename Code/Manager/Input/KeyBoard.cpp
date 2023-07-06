@@ -1,6 +1,8 @@
 #include "Input.h"
 
 namespace Input {
+	static Input::Keyboard keyboard = Input::Keyboard();
+
 	std::array<char, Keyboard::GetKeyBufferSize()> Keyboard::inputBuffer;
 	std::array<char, Keyboard::GetKeyBufferSize()> Keyboard::inputBuffer_prev;
 

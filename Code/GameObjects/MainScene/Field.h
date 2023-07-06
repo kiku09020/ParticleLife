@@ -1,6 +1,6 @@
 #pragma once
-#include"GameObject.h"
-#include "Renderer2D.h"
+#include"GameObjects/Base/GameObject.h"
+#include "Renderer/Renderers/Renderer2D.h"
 
 // 画面のフィールド
 class Field : public GameObject

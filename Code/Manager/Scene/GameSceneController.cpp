@@ -10,7 +10,7 @@ void SceneController::Init()
 	// ここにシーンを追加
 	AddScene(new MainScene());
 
-	sceneCount = sceneList.size();
+	sceneCount = (int)sceneList.size();
 
 	// 初期シーンをロード
 	activeScene = sceneList[0];

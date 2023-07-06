@@ -1,8 +1,8 @@
 #pragma once
 #include "DxLib.h"
-#include "Window.h"
+#include "Window/Window.h"
 
-#include "SceneController.h"
+#include "Scene/SceneController.h"
 
 class Core
 {

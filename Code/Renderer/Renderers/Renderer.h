@@ -1,9 +1,9 @@
 #pragma once
 #include <string>
 
-#include "Camera.h"
-#include "RenderedShape.h"
-#include "RenderedGraphic.h"
+#include "GameObjects/Camera/Camera.h"
+#include "Renderer/RenderedObjects/RenderedShape.h"
+#include "Renderer/RenderedObjects/RenderedGraphic.h"
 
 // レンダラー基底クラス
 class Renderer

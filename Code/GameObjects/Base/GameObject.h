@@ -1,6 +1,6 @@
 #pragma once
 #include "DxLib.h"
-#include "Color.h"
+#include "Extensions/Color.h"
 
 class Transform
 {

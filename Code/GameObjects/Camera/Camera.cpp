@@ -1,5 +1,5 @@
 #include "Camera.h"
-#include "Input.h"
+#include "Input/Input.h"
 
 using namespace Input;
 

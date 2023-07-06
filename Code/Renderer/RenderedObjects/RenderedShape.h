@@ -1,7 +1,7 @@
 #pragma once
 #include "DxLib.h"
 
-#include "Camera.h"
+#include "GameObjects/Camera/Camera.h"
 
 #include <type_traits>
 #include <vector>

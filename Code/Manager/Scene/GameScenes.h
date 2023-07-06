@@ -1,10 +1,10 @@
 #pragma once
 #include "SceneController.h"
 #include "DxLib.h"
-#include "Input.h"
-#include "Color.h"
+#include "Input/Input.h"
+#include "Extensions/Color.h"
 
-#include "Field.h"
+#include "GameObjects/MainScene/Field.h"
 
 class MainScene : public GameSceneBase
 {

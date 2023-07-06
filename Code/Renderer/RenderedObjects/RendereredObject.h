@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Camera.h"
+#include "GameObjects/Camera/Camera.h"
 #include <vector>
 
 class RenderedObject {

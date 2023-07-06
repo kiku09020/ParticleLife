@@ -1,5 +1,5 @@
 #pragma once
-#include "GameObject.h"
+#include "GameObjects/Base/GameObject.h"
 
 class Particle 
 {

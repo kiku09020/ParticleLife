@@ -25,7 +25,7 @@ protected:
 
         const std::string& fileDir = commonDataDirPath + fileDirPath; 
 
-        const int size = fileDir.size() + 1;
+        const int size = (int)fileDir.size() + 1;
         char* filePath = new char[size];
         std::char_traits<char>::copy(filePath, fileDir.c_str(), size);
 

@@ -1,6 +1,6 @@
 #include "Core.h"
-#include "Input.h"
-#include "Color.h"
+#include "Input/Input.h"
+#include "Extensions/Color.h"
 
 using namespace Input;
 

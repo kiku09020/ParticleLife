@@ -30,6 +30,8 @@ void MainScene::OnSceneUpdate()
 	if (Keyboard::GetKeyDown(KEY_INPUT_ESCAPE)) {
 		OnSceneDestroied();
 	}
+
+	DrawFormatString(0, 100, GetColor(0, 0, 0), "%.3f", camera->transform.position.z);
 }
 
 void MainScene::OnSceneDestroied()

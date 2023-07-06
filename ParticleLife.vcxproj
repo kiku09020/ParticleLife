@@ -79,6 +79,7 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -113,6 +114,7 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -148,23 +150,30 @@
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameSceneController.cpp" />
     <ClCompile Include="GameScenes.cpp" />
-    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="RenderedGraphic.cpp" />
+    <ClCompile Include="RenderedObject.cpp" />
+    <ClCompile Include="RenderedShape.cpp" />
     <ClCompile Include="KeyBoard.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Particle.cpp" />
     <ClCompile Include="ParticleManager.cpp" />
-    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Renderer2D.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Core.h" />
+    <ClInclude Include="Event.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameScenes.h" />
-    <ClInclude Include="Graph.h" />
+    <ClInclude Include="RenderedGraphic.h" />
+    <ClInclude Include="RenderedShape.h" />
     <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Renderer2D.h" />
+    <ClInclude Include="Renderer3D.h" />
+    <ClInclude Include="RendereredObject.h" />
     <ClInclude Include="SceneController.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Particle.h" />

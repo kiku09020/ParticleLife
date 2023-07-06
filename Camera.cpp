@@ -35,23 +35,23 @@ void Camera::Zoom()
 {
 	// ズームアウト
 	if (Mouse::GetIsWheelBack()) {
-		if (transform.position.z >= zoomableMin) {
+		if (transform.position.z > -zoomableRegion) {
 			transform.position.z -= zoomDistance;
 		}
 
 		else {
-			transform.position.z = zoomableMin;
+			transform.position.z = -zoomableRegion;
 		}
 	}
 
 	// ズームイン
 	if (Mouse::GetIsWheelForward()) {
-		if (transform.position.z <= zoomableMax) {
+		if (transform.position.z < zoomableRegion) {
 			transform.position.z += zoomDistance;
 		}
 
 		else {
-			transform.position.z = zoomableMax;
+			transform.position.z = zoomableRegion;
 		}
 	}
 }

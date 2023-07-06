@@ -4,9 +4,8 @@
 class Camera : public GameObject
 {
 private:
-	float zoomDistance = 3.0f;			// ズーム距離
-	const float zoomableMin = -30;		// ズームアウトできる最小値
-	const float zoomableMax = 30;		// ズームインできる最大値
+	const float zoomableRegion = 100;
+	float zoomDistance = zoomableRegion / 7.5f;			// ズーム距離
 	
 	// ズーム
 	void Zoom();

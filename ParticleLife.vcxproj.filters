@@ -114,11 +114,17 @@
     <ClCompile Include="Window.cpp">
       <Filter>ソース ファイル\Manager\Base</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer.cpp">
+    <ClCompile Include="RenderedShape.cpp">
       <Filter>ソース ファイル\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="Graph.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="RenderedGraphic.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer2D.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderedObject.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -158,8 +164,23 @@
     <ClInclude Include="Renderer.h">
       <Filter>ヘッダー ファイル\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="Graph.h">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="RenderedShape.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderedGraphic.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer2D.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer3D.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RendereredObject.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>ヘッダー ファイル\Extension</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

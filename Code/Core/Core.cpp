@@ -1,6 +1,7 @@
 #include "Core.h"
 #include "Input/Input.h"
 #include "Extensions/Color.h"
+#include "UI/UIManager.h"
 
 using namespace Input;
 
@@ -32,6 +33,7 @@ void Core::OnInit()
 	SetOutApplicationLogValidFlag(false);		// ログ出力しない
 	DxLib_Init();								// DxLib初期化
 
+	UIManager::Init();
 	SceneController::Init();					// シーンの初期化
 }
 
@@ -42,6 +44,7 @@ void Core::OnUpdate()
 {
 	ClearDrawScreen();
 
+	UIManager::Update();
 	SceneController::Update();					// シーンの更新処理
 
 	SetDrawScreen(DX_SCREEN_BACK);
@@ -56,6 +59,7 @@ void Core::OnEnd()
 {
 	delete mainWindow;
 
+	UIManager::OnEnd();
 	DxLib_End();								// DxLib終了処理
 }
 

@@ -6,7 +6,7 @@
 class GameSceneBase
 {
 private:
-	int sceneIndex;			// シーン番号
+	int sceneIndex = 0;			// シーン番号
 
 public:
 	// シーンがロードされるときの処理
@@ -24,11 +24,11 @@ public:
 class SceneController
 {
 private:
-	static GameSceneBase* activeScene;
+	static inline GameSceneBase* activeScene;
 
-	static std::vector<GameSceneBase*> sceneList;
+	static inline std::vector<GameSceneBase*> sceneList;
 
-	static int sceneCount;		// シーンの合計数
+	static inline int sceneCount;		// シーンの合計数
 
 	// シーンをリストに追加
 	static void AddScene(GameSceneBase* scene);

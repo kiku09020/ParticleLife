@@ -2,7 +2,6 @@
 
 #include "DxLib.h"
 
-
 #include <string>
 #include <vector>
 #include <unordered_map>
@@ -16,9 +15,6 @@ private:
 	std::string fontDirPath;		// フォントのディレクトリパス
 
 	int fontHandle;					// フォントハンドル
-
-	/* Setters */
-	void SetFontHandle();
 
 public:
 	enum FontType

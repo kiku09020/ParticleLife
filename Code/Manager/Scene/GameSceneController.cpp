@@ -1,14 +1,11 @@
 #include "SceneController.h"
 #include "GameScenes.h"
 
-GameSceneBase* SceneController::activeScene;
-std::vector<GameSceneBase*> SceneController::sceneList;
-int SceneController::sceneCount;
-
 void SceneController::Init()
 {
-	// ここにシーンを追加
-	AddScene(new MainScene());
+		// ここにシーンを追加
+		AddScene(new MainScene());
+
 
 	sceneCount = (int)sceneList.size();
 
@@ -24,9 +21,9 @@ void SceneController::Update()
 
 //--------------------------------------------------
 
-void SceneController::AddScene(GameSceneBase* state)
+void SceneController::AddScene(GameSceneBase* scene)
 {
-	sceneList.push_back(state);
+	sceneList.push_back(scene);
 }
 
 //--------------------------------------------------

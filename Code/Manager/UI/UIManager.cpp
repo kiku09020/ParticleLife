@@ -15,47 +15,48 @@ using namespace Input;
 
 #include <Extensions/nuklear.h>
 
+//nk_context *Getter()
+//{
+//    static struct nk_context* ctx = NULL;
+//    if (!ctx) { ctx = (nk_context*)malloc(sizeof(nk_context)); }
+//    return ctx;
+//}
+
 struct nk_context ctx;
 
-//--------------------------------------------------
-
-const int UIManager::FONT_SIZE;
-const int UIManager::FONT_THICKNESS;
 
 //--------------------------------------------------
-int f;
 
 void UIManager::Init()
 {
     FontManager::Init();
 
-    const auto dxFont = FontManager::GetFontHandle("JFドットM+H10");
-    f = dxFont;
+    const int dxFont = FontManager::GetFontHandle("JFドットM+H10");
 
 	/* フォント初期化 */
 	struct nk_user_font nkFont;
 	nkFont.userdata = nk_handle_id(dxFont);				// フォントハンドル
-	nkFont.height = static_cast<float>(FONT_SIZE);		// フォントの高さ
+	nkFont.height = static_cast<float>(12);		// フォントの高さ
 
 	// フォント幅自動調整
 	nkFont.width = [](const nk_handle handle, float h, const char* str, const int len) -> float {
 		return static_cast<float>(GetDrawStringWidthToHandle(str, len, handle.id));
 	};
+
+    nk_init_default(&ctx, &nkFont);
 }
 
 void UIManager::Update()
 {
-    DrawFormatStringToHandle(200, 200, GetColor(0, 0, 0), f, "Hello");
-
 	CheckInput();
+
+    RenderTest();
 	GUIRender();
-    //RenderTest();
 
 }
 
 void UIManager::OnEnd()
 {
-    RemoveFontResourceEx("Fonts/JF-Dot-MPlusH10.ttf", FR_PRIVATE, NULL);
     nk_free(&ctx);
 }
 

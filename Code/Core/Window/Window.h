@@ -36,13 +36,14 @@ private:
 		nearest  = DX_FSSCALINGMODE_NEAREST,
 	};
 
-	const TCHAR* WINDOW_TITLE				= "Title";			// タイトル
+	const TCHAR* WINDOW_TITLE				= "WindowTitle";			// タイトル
 	const WindowStyleMode WINDOW_STYLE		= withMaximize;		// ウィンドウスタイル
 	const FullScrnResolMode RESOLUTION_MODE = native;			// フルスクリーン解像度モード(違いわからん)
 	const FullScrnScalingMode SCALING_MODE	= nearest;			// 画面拡大モード
 
 	const bool ENABLE_CHANGEWINDOWSIZE		= true;				// ウィンドウサイズが変更可能か
 	const bool IS_WINDOWMODE				= true;				// ウィンドウモードかどうか
+	const bool IS_DISP_MOUSECURSOR			= true;				// マウス表示するかどうか
 
 	const Color bgColor		= Color::GrayWithRGB();				// 背景色
 	const int COLORBIT_DEPTH				= 8;				// カラービット

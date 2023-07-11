@@ -2,14 +2,18 @@
 
 using namespace Input;
 
-void MainScene::OnSceneLoaded()
+MainScene::MainScene()
 {
 	camera = new Camera();
-
 	field = new Field(camera);
 
 	camera->Init();
 	field->Init();
+}
+
+void MainScene::OnSceneLoaded()
+{
+
 }
 
 void MainScene::OnSceneUpdate()

@@ -17,6 +17,8 @@ Window::Window()
 	// 描画設定
 	SetBackgroundColor(bgColor.r, bgColor.g, bgColor.b);			// 背景色の指定
 
+	// マウス表示
+	SetMouseDispFlag(true);
 }
 
 void Window::SetWindowSize(VECTOR windowSize)

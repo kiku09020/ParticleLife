@@ -12,7 +12,11 @@ private:
 	Camera* camera;
 	Field* field;
 
+
 public:
+	// コンストラクタ
+	MainScene();
+
 	void OnSceneLoaded() override;
 	void OnSceneUpdate() override;
 	void OnSceneDestroied() override;

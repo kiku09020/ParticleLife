@@ -1,9 +1,9 @@
 #include "Core.h"
 #include "Input/Input.h"
 #include "Extensions/Color.h"
+#include "Scene/SceneController.h"
 
 using namespace Input;
-
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
@@ -23,19 +23,19 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 }
 
 //--------------------------------------------------
+
 int Core::OnInit()
 {
-	mainWindow = new Window();
-	if (DxLib_Init() == -1) { return -1; }
+	mainWindow = new Window();					// ウィンドウ、描画系のセットアップ
 
+	SetAlwaysRunFlag(ISRUNNING_ALWAYS);			// 常時処理するか
+	SetOutApplicationLogValidFlag(ENABLE_LOG);	// ログ出力
+	SetWaitVSyncFlag(ENABLE_VSYNC);				// Vsync
 
-	SetOutApplicationLogValidFlag(false);		// ログ出力しない
-
+	if (DxLib_Init() == -1) { return -1; }		// DxLib初期化(エラー時に終了)
 
 	SceneController::Init();					// シーンの初期化
-	UIManager::Init();
 }
-
 
 //--------------------------------------------------
 
@@ -43,7 +43,6 @@ void Core::OnUpdate()
 {
 	ClearDrawScreen();
 
-	UIManager::Update();
 	SceneController::Update();					// シーンの更新処理
 
 	SetDrawScreen(DX_SCREEN_BACK);
@@ -58,7 +57,6 @@ void Core::OnEnd()
 {
 	delete mainWindow;
 
-	UIManager::OnEnd();
 	DxLib_End();								// DxLib終了処理
 }
 

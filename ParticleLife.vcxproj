@@ -155,7 +155,6 @@
     <ClCompile Include="Code\Manager\Scene\GameSceneController.cpp" />
     <ClCompile Include="Code\Manager\Scene\GameScenes.cpp" />
     <ClCompile Include="Code\Manager\UI\FontManager.cpp" />
-    <ClCompile Include="Code\Manager\UI\UIManager.cpp" />
     <ClCompile Include="Code\Renderer\RenderedObjects\RenderedGraphic.cpp" />
     <ClCompile Include="Code\Renderer\RenderedObjects\RenderedObject.cpp" />
     <ClCompile Include="Code\Renderer\RenderedObjects\RenderedShape.cpp" />
@@ -166,7 +165,6 @@
     <ClInclude Include="Code\Core\Window\Window.h" />
     <ClInclude Include="Code\Extensions\Color.h" />
     <ClInclude Include="Code\Extensions\Event.h" />
-    <ClInclude Include="Code\Extensions\nuklear.h" />
     <ClInclude Include="Code\GameObjects\Camera\Camera.h" />
     <ClInclude Include="Code\GameObjects\MainScene\Field.h" />
     <ClInclude Include="Code\GameObjects\MainScene\Particle.h" />
@@ -175,7 +173,6 @@
     <ClInclude Include="Code\Manager\Scene\GameScenes.h" />
     <ClInclude Include="Code\Manager\Scene\SceneController.h" />
     <ClInclude Include="Code\Manager\UI\FontManager.h" />
-    <ClInclude Include="Code\Manager\UI\UIManager.h" />
     <ClInclude Include="Code\Renderer\RenderedObjects\RenderedGraphic.h" />
     <ClInclude Include="Code\Renderer\RenderedObjects\RenderedShape.h" />
     <ClInclude Include="Code\Renderer\RenderedObjects\RendereredObject.h" />

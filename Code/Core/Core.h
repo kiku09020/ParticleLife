@@ -2,36 +2,29 @@
 #include "DxLib.h"
 #include "Window/Window.h"
 
-#include "Scene/SceneController.h"
-#include "UI/UIManager.h"
-
 class Core
 {
 private:
-	static inline UIManager uiManager;
-	static inline Window* mainWindow;
+	static inline Window* mainWindow;							// メインウィンドウ
 
-	static const inline int WAIT_MS			= 10;							// 待機ミリ秒
+	static const inline int WAIT_MS			= 10;				// 待機ミリ秒
+
+	static inline bool ENABLE_LOG			= false;			// ログファイルを出力するか
+	static inline bool ISRUNNING_ALWAYS		= false;			// ウィンドウが非アクティブな状態でも実行し続けるか(デフォ：false)
+	static inline bool ENABLE_VSYNC			=  true;			// ScreenFlip時の垂直同期を有効にするか(デフォ：true)
 
 	//--------------------------------------------------
-
 public:
-	/// <summary>
-	/// 初期化時の処理
-	/// </summary>
+	// 初期化時の処理 
 	static int OnInit();
 
-	/// <summary>
-	/// 更新処理
-	/// </summary>
+	// 更新処理
 	static void OnUpdate();
 
-	/// <summary>
-	/// 終了時の処理
-	/// </summary>
+	// 終了時の処理
 	static void OnEnd();
 
 	//--------------------------------------------------
-
+	// ウィンドウの取得
 	static Window* GetMainWindow() { return mainWindow; }
 };
